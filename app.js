@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-require("../New folder/connection/connc");
+require("../connection/connc");
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
